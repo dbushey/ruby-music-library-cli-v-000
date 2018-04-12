@@ -85,10 +85,9 @@ class MusicLibraryController
       input = gets.strip
 
       songs_alphabetized = Song.all.sort_by &:name
-
       songs_alphabetized.each_with_index do |val,index|
+        binding.pry
         if index == input
-          #"Playing Larry Csonka by Action Bronson"
          puts "Playing #{val.name} by #{val.artist.name}"
        end
       end
