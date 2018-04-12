@@ -78,8 +78,6 @@ class MusicLibraryController
   end
 
   def play_song
-    #input = ""
-    #while input < 1 && input > 5
 
       puts "Which song number would you like to play?"
       input = gets.strip.to_i
@@ -89,9 +87,9 @@ class MusicLibraryController
         songs_alphabetized.each_with_index do |val,index|
          if (index + 1) == input
          puts "Playing #{val.name} by #{val.artist.name}"
+         end
         end
-      end
-    end
+     end
   end
 
 end
