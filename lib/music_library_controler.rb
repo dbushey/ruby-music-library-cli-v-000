@@ -86,13 +86,15 @@ class MusicLibraryController
 
       songs_alphabetized = Song.all.sort_by &:name
       if input >= 1 && input <= Song.all.count
-
         songs_alphabetized.each_with_index do |val,index|
          if index == input
          puts "Playing #{val.name} by #{val.artist.name}"
-       end
+        end
       end
+    end
+end
 
+end
 
       # case input
       # when "1"
@@ -113,6 +115,6 @@ class MusicLibraryController
 
 
 
-  end
 
-end
+
+
