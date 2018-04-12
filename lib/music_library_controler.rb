@@ -92,7 +92,7 @@ class MusicLibraryController
         end
       end
     end
-end
+  end
 
 end
 
@@ -112,9 +112,3 @@ end
 
     #while i <= input && i
       #"Playing Larry Csonka by Action Bronson"
-
-
-
-
-
-
