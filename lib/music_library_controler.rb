@@ -82,7 +82,7 @@ class MusicLibraryController
     #while input < 1 && input > 5
 
       puts "Which song number would you like to play?"
-      input = gets.strip
+      input = gets.strip.to_i
 
       songs_alphabetized = Song.all.sort_by &:name
       if input >= 1 && input <= Song.all.count
