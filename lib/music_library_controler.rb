@@ -86,10 +86,11 @@ class MusicLibraryController
 
       songs_alphabetized = Song.all.sort_by &:name
 
-      songs_alphabetized.each_with_index do
-        
-        |val,index| puts "#{index + 1}. #{val.artist.name} - #{val.name} - #{val.genre.name}"
-
+      songs_alphabetized.each_with_index do |val,index|
+        if index == input
+          #"Playing Larry Csonka by Action Bronson"
+         puts "Playing #{val.name} by #{val.artist.name}"
+       end
       end
 
 
