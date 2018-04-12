@@ -83,7 +83,7 @@ class MusicLibraryController
       list_songs
       puts "Which song number would you like to play?"
       input = gets.strip
-      list_songs.type
+      list_songs.size
       # case input
       # when "1"
       #   "Playing song 1"
