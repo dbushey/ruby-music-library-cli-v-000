@@ -86,7 +86,7 @@ class MusicLibraryController
 
       songs_alphabetized = Song.all.sort_by &:name
       songs_alphabetized.each_with_index do |val,index|
-        binding.pry
+        
         if index == input
          puts "Playing #{val.name} by #{val.artist.name}"
        end
