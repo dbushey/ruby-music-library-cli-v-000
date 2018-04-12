@@ -83,6 +83,7 @@ class MusicLibraryController
       list_songs
       puts "Which song number would you like to play?"
       input = gets.strip
+      list_songs.type
       # case input
       # when "1"
       #   "Playing song 1"
@@ -97,7 +98,7 @@ class MusicLibraryController
       # end
     #end
 
-    #while i <= input && i 
+    #while i <= input && i
       #"Playing Larry Csonka by Action Bronson"
 
 
