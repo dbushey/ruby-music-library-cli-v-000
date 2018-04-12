@@ -80,10 +80,10 @@ class MusicLibraryController
   def play_song
     #input = ""
     #while input < 1 && input > 5
-      list_songs
+
       puts "Which song number would you like to play?"
       input = gets.strip
-      list_songs.size
+      
       # case input
       # when "1"
       #   "Playing song 1"
