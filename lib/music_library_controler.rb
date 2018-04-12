@@ -93,20 +93,3 @@ class MusicLibraryController
   end
 
 end
-
-      # case input
-      # when "1"
-      #   "Playing song 1"
-      # when "2"
-      #   "Playing song 2"
-      # when "3"
-      #   "Playing song 3"
-      # when "4"
-      #   "Playing song 4"
-      # when "5"
-      #   "Playing song 5"
-      # end
-    #end
-
-    #while i <= input && i
-      #"Playing Larry Csonka by Action Bronson"
