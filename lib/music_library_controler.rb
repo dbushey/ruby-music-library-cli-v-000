@@ -83,10 +83,7 @@ class MusicLibraryController
 
       puts "Which song number would you like to play?"
       input = gets.strip
-      Song.all.each_with_index do
-       |val,index| puts "#{index + 1}. #{val.artist.name} - #{val.name} - #{val.genre.name}"
 
-     end
 
       # case input
       # when "1"
