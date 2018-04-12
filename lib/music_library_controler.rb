@@ -85,9 +85,10 @@ class MusicLibraryController
       input = gets.strip
 
       songs_alphabetized = Song.all.sort_by &:name
-      songs_alphabetized.each_with_index do |val,index|
-        
-        if index == input
+      if input >= 1 && input <= Song.all.count
+
+        songs_alphabetized.each_with_index do |val,index|
+         if index == input
          puts "Playing #{val.name} by #{val.artist.name}"
        end
       end
